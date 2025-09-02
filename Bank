@@ -1,0 +1,36 @@
+package datatypedemo;
+class RbiBank{
+	public double getRateOfInterest() {
+		return 5.0;
+	}
+}
+class SBI extends RbiBank{
+	
+	@Override
+	public double getRateOfInterest() {
+		return 6.5;
+	}
+	public void SbiSpecialFeature(){
+		System.out.println("SBI Special Feature");			
+	}
+}
+	class ICICI extends RbiBank{
+		@Override
+		public double getRateOfInterest() {
+			return 7.5;
+			
+		}
+}
+public class Bank{
+	public static void main(String[] args) {
+		RbiBank	rb= new RbiBank(); 
+		SBI sbi = new SBI();
+		RbiBank sbi1 = new SBI();
+		ICICI ic = new ICICI();
+		System.out.println("RBI Rate of interest: "+rb.getRateOfInterest()+
+						"\n"+"SBI Rate of interest: "+sbi.getRateOfInterest()+
+						"\n"+"ICICI Rate of interest: "+ic.getRateOfInterest()+
+						"\n"+"RBI Called from SBI: "+sbi1.getRateOfInterest()
+						);
+	}
+}
