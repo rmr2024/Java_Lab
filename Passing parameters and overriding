@@ -1,0 +1,32 @@
+package datatypedemo;
+class ABC {
+    ABC(String message) {
+        System.out.println("Class ABC: " + message);
+    }
+    
+    void show() {
+        System.out.println("Method from ABC");
+    }
+}
+
+class Q extends ABC {
+    Q(String message) {
+        super(message);
+        System.out.println("Class Q constructor");
+    }
+    
+    @Override
+    void show() {
+        System.out.println("Overridden method in Q");
+    }
+}
+
+public class Args {
+
+	public static void main(String[] args) {
+		Q c1 = new Q("Hello");
+        c1.show();
+
+	}
+
+}
