@@ -1,0 +1,22 @@
+package datatypedemo;
+
+class GrandParent{
+	String Name;
+}
+
+class Parent extends GrandParent{
+	String Gender;
+}
+class Child extends Parent{
+	int Age;
+}
+public class MultiLevelInheritance {
+
+	public static void main(String[] args) {
+		GrandParent g = new GrandParent();
+		Parent p = new Parent();
+		Child c = new Child();
+
+	}
+
+}
