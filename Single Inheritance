@@ -1,0 +1,20 @@
+package datatypedemo;
+class Teacher {
+	String Name;
+}
+class Student extends Teacher{
+	int Age;
+}
+public class SingleInheritance {
+
+	public static void main(String[] args) {
+		Teacher T = new Teacher();
+		Student S = new Student();
+		T.Name="Sangeetha";
+		S.Name="Meenakshi";
+		S.Age=19;
+		System.out.println("Teacher Name: "+T.Name);
+		System.out.println("Student Name: "+S.Name);
+		System.out.println("Student Age: "+S.Age);
+		}
+}
