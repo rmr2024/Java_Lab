@@ -1,0 +1,61 @@
+package datatypedemo;
+import java.lang.*;
+import java.util.Scanner;
+public class ArithmeticOperators {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a: ");
+		int a=input.nextInt();
+		System.out.println("Enter b: ");
+		int b=input.nextInt();
+		boolean boolA=true;
+		boolean boolB=false;
+		System.out.println("-----------------------");
+		System.out.println("  Arithmetic Operators ");
+		System.out.println("-----------------------");
+		System.out.println("Addition(+)        = "+ (a+b));
+		System.out.println("Substraction(-)    = "+ (a-b));
+		System.out.println("Multiplication(*)  = "+ (a*b));
+		System.out.println("Division(/)        = "+ (a/b));
+		System.out.println("Modulus Division(%)= "+ (a%b));
+		
+		System.out.println("-----------------------");
+		System.out.println("   Logical Operators   ");
+		System.out.println("-----------------------");
+		System.out.println("OR            = "+ (boolA || boolB));
+		System.out.println("AND           = "+ (boolA && boolB));
+		System.out.println("Negation of a = "+ (~a));
+		System.out.println("Negation of b = "+ (~b));
+		
+		System.out.println("-----------------------");
+		System.out.println("  Relational Operators ");
+		System.out.println("-----------------------");
+		System.out.println("a>b   = "+ (a>b));
+		System.out.println("a>b   = "+ (a<b));
+		System.out.println("a>=b  = "+ (a>=b));
+		System.out.println("a<=b  = "+ (a<=b));
+		System.out.println("a==b  = "+ (a==b));
+		System.out.println("a!=b  = "+ (a!=b));
+		
+		System.out.println("-----------------------");
+		System.out.println(" Assignment Operators  ");
+		System.out.println("-----------------------");
+		System.out.println("a+=b   = "+ (a+=b));
+		System.out.println("a-=b   = "+ (a-=b));
+		System.out.println("a*=b   = "+ (a*=b));
+		System.out.println("a/=b   = "+ (a/=b));
+		
+		System.out.println("-----------------------");
+		System.out.println("   Bitwise Operators   ");
+		System.out.println("-----------------------");
+		System.out.println("OR              = "+ (boolA | boolB));
+		System.out.println("AND             = "+ (boolA & boolB));
+		System.out.println("Negation of a   = "+ (~a));
+		System.out.println("Leftshift of a  = "+(a << 2));
+		System.out.println("Rightshift of a = "+(a << 2));
+		
+	}
+
+}
